@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.tsx"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: 'Roboto, sans-serif'
+      },
+
+      backgroundImage: {
+        app: 'url(/app-bg.png)'
+      }
+    },
+
   },
   plugins: [],
 }
