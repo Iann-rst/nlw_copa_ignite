@@ -45,6 +45,16 @@ async function bootstrap() {
 
   })
 
+  //Contagem de usuários
+  fastify.get('/users/count', async () => {
+    return { cont: 1 }
+  })
+
+  //Contagem de palpites
+  fastify.get('/guesses/count', async () => {
+    return { count: 1 }
+  })
+
   await fastify.listen({ port: 3333, host: '0.0.0.0' })
 }
 
