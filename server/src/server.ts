@@ -47,7 +47,7 @@ async function bootstrap() {
 
   //Contagem de usuários
   fastify.get('/users/count', async () => {
-    return { cont: 1 }
+    return { count: 1 }
   })
 
   //Contagem de palpites
