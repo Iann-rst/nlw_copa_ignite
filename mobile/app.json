@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "copamobile",
+    "scheme": "copamobile",
     "slug": "copamobile",
     "version": "1.0.0",
     "orientation": "portrait",
