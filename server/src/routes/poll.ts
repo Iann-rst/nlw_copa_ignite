@@ -20,13 +20,33 @@ export async function pollRoutes(fastify: FastifyInstance) {
 
     const code = String(generate()).toUpperCase();
 
-    await prisma.poll.create({
-      data: {
-        title,
-        code
-      }
+    try {
+      await request.jwtVerify();
+      await prisma.poll.create({
+        data: {
+          title,
+          code,
+          ownerId: request.user.sub,
 
-    })
+          participants: {
+            create: {
+              userId: request.user.sub
+            }
+          }
+        }
+      })
+
+    } catch {
+
+      await prisma.poll.create({
+        data: {
+          title,
+          code
+        }
+
+      })
+    }
+
     return response.status(201).send({ code })
 
   })
