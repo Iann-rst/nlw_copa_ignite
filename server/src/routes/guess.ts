@@ -1,8 +1,11 @@
 import { FastifyInstance } from 'fastify';
+import { prisma } from '../lib/prisma';
 
 export async function guessRoutes(fastify: FastifyInstance) {
   //Contagem de palpites
   fastify.get('/guesses/count', async () => {
-    return { count: 1 }
+    const count = await prisma.guess.count()
+
+    return { count }
   })
 }
