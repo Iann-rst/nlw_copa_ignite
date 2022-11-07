@@ -53,7 +53,7 @@ export async function pollRoutes(fastify: FastifyInstance) {
   })
 
   //Entrar em um bolão
-  fastify.post('/polls/:id/join', { onRequest: authenticate }, async (request, reply) => {
+  fastify.post('/polls/:id/join', { onRequest: [authenticate] }, async (request, reply) => {
     const joinPollBody = z.object({
       code: z.string()
     })
@@ -104,5 +104,44 @@ export async function pollRoutes(fastify: FastifyInstance) {
     })
 
     return reply.status(201).send()
+  })
+
+  //Pegar os bolões que participar e as informações dos bolões e participantes
+  fastify.get('/polls', { onRequest: [authenticate] }, async (request) => {
+    const polls = await prisma.poll.findMany({
+      where: {
+        participants: {
+          some: {
+            userId: request.user.sub
+          }
+        }
+      },
+      include: {
+        _count: {
+          select: {
+            participants: true
+          }
+        },
+        participants: {
+          select: {
+            id: true,
+
+            user: {
+              select: {
+                avatarUrl: true
+              }
+            }
+          },
+          take: 4,
+        },
+        owner: {
+          select: {
+            id: true,
+            name: true
+          }
+        }
+      }
+    })
+    return { polls }
   })
 }
