@@ -25,7 +25,7 @@ export function Find() {
         })
       }
 
-      await api.post('/polls/join', { code });
+      await api.post('/polls/join', { code: code.toUpperCase() });
 
       toast.show({
         title: 'Você entrou no bolão com sucesso!',
