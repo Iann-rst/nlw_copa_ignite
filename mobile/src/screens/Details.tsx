@@ -11,6 +11,8 @@ import { PoolHeader } from '../components/PoolHeader';
 import { EmptyMyPoolList } from '../components/EmptyMyPoolList';
 import { Option } from '../components/Option';
 
+import { Guesses } from '../components/Guesses';
+
 
 interface routeParams {
   id: string;
@@ -88,6 +90,8 @@ export function Details() {
                 onPress={() => setOptionSelected('Ranking')}
               />
             </HStack>
+
+            <Guesses pollId={pollDetails.id} />
 
           </VStack>
           :
