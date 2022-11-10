@@ -11,8 +11,9 @@
   - Durante os dias xx e xx aconteceu a 10ª edição da NLW, o evento **NLW Copa**. Durante essa edição foi desenvolvido um projeto de palpites de jogos da copa do mundo. 
 
   Nessa edição, na trilha ignite, forma desenvolvidas 3 aplicações:
+  
     - [Back-end](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/server)
-    
+
     - [Versão Web](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/web)
 
     - [Versão Mobile](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/mobile)
