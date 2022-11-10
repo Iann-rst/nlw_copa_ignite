@@ -12,7 +12,9 @@
 
   Nessa edição, na trilha ignite, forma desenvolvidas 3 aplicações:
     - [Back-end](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/server)
+    
     - [Versão Web](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/web)
+
     - [Versão Mobile](https://github.com/Iann-rst/nlw_copa_ignite/tree/main/mobile)
 
 ## :rocket: Como Executar?
