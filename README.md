@@ -8,7 +8,7 @@
 
   Next Level Week (NLW) é um evento **online** e **gratuito** de programação na prática com muito código, desafios, networking e com o objetivo de te levar para o próximo nível.
 
-  - Durante os dias xx e xx aconteceu a 10ª edição da NLW, o evento **NLW Copa**. Durante essa edição foi desenvolvido um projeto de palpites de jogos da copa do mundo. 
+  - Durante os dias 31/10 e 04/11 aconteceu a 10ª edição da NLW, o evento **NLW Copa**. Durante essa edição foi desenvolvido um projeto de palpites de jogos da copa do mundo. 
 
   Nessa edição, na trilha ignite, foram desenvolvidas 3 aplicações:
 
