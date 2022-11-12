@@ -20,5 +20,35 @@
 
 ## :camera: Screenshots
 
+<div align="center">
+  <div>
+    <h3>Página SignIn - OAuth Google</h3>
+    <img src="../.github/SignIn.jpg" alt="" height="500px">
+  </div>
+  <hr>
+  <div>
+    <h3>Página Criar Bolão</h3>
+    <img src="../.github/Criar-bolão.jpg" alt="" height="500px">
+  </div>
+  <hr>
+
+  <div>
+    <h3>Página Listar Bolão</h3>
+    <img src="../.github/Listar-bolão.jpg" alt="" height="500px">
+  </div>
+  <hr>
+
+  <div>
+    <h3>Procurar Bolão Por Código</h3>
+    <img src="../.github/Buscar-bolão.jpg" alt="" height="500px">
+  </div>
+  <hr>
+
+  <div>
+    <h3>Página Detalhes Bolão e Confirmar Palpite</h3>
+    <img src="../.github/Detalhes-bolão.jpg" alt="" height="500px">
+  </div>
+</div>
+
 
 
